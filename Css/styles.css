@@ -4,16 +4,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /*Colors*/
 :root {
-  --primary-color: #8875ff;
+  --primary1-color: #8875ff;
+  --primary2-color: #6b57f1;
 }
 /*Body*/
 body{
     background-color: black;
     color: white;
 }
+/*button*/
+.mainBut{
+    width: 80px;
+    height:50px;
+    margin: 10px;
+    background-color: var(--primary1-color);
+    border: solid var(--primary2-color);
+    border-radius: 10px;
+}
+.noneBut{
+    margin: 10px;
+    padding: 20px;
+    background:none;
+    color: #FFFFFF;
+    opacity: 44%;
+    border: solid black;
+}
+  
+.noneBut:hover,
+.mainBut:hover{
+    opacity: 100%;
+    color: #FFFFFF;
+}
+
 /*Intro1*/
 .intro1{
     display: flex;
@@ -24,26 +50,38 @@ body{
 .intro1.hidde{
     display: none;
 }
+.intro1.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50%;
+}
 /*Intro2*/
 .intro2{
     display: none;
 }
 .intro2.active{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 100px;
+}
+.intro2.hidde{
+    display: none;
 }
 .intro2header{
     display: flex;
     flex-direction: row;
     border: solid 1px var(--primary-color);
 }
+
 .intro2main{
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: solid 1px var(--primary-color);
+    text-align: center;
 }
 .intro2footer{
     display: flex;
@@ -51,6 +89,9 @@ body{
     justify-content: space-between;
     border: solid 1px var(--primary-color);
 }
-
+/*Intro3*/
+.intro3{
+    display: none;
+}
 
 
