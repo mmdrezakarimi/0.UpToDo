@@ -72,7 +72,6 @@ body{
 .intro2header{
     display: flex;
     flex-direction: row;
-    border: solid 1px var(--primary-color);
 }
 
 .intro2main{
@@ -80,17 +79,25 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 1px var(--primary-color);
+
     text-align: center;
 }
 .intro2footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 1px var(--primary-color);
 }
 /*Intro3*/
 .intro3{
+    display: none;
+}
+.intro3.active{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.intro3.hidde{
     display: none;
 }
 
