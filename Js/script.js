@@ -4,11 +4,13 @@ const intro1 = document.getElementsByClassName("intro1")
 const intro2 = document.getElementsByClassName("intro2")
 const intro3 = document.getElementsByClassName("intro3")
 const wlcPage = document.getElementsByClassName("wlcPage")
+const loginPage = document.getElementsByClassName("loginPage")
 //IntroButtons
 const start = document.getElementsByClassName("start")
 const back = document.getElementsByClassName("noneBut")
 const next = document.getElementsByClassName("mainBut")
 const arrowBut = document.getElementsByClassName("arrowBut")
+const loginBut = document.getElementsByClassName("loginBut")
 //skip
     back[0].addEventListener("click" , function(){
         intro1[0].classList.remove("active");
@@ -47,12 +49,18 @@ const arrowBut = document.getElementsByClassName("arrowBut")
     intro3[0].classList.remove("active");
     intro3[0].classList.add("hidde");
     })
-    //arrow-But
+//arrow-But
     arrowBut[0].addEventListener("click" , function(){
     wlcPage[0].classList.remove("active");  
     wlcPage[0].classList.add("hidde");  
-    intro3[0].classList.remove("hidde");
-    intro3[0].classList.add("active");
+    intro0[0].classList.remove("hidde");
+    intro0[0].classList.add("active");
+    })
+    arrowBut[1].addEventListener("click" , function(){
+    loginPage[0].classList.add("hidde");
+    loginPage[0].classList.remove("active");
+    wlcPage[0].classList.add("active");  
+    wlcPage[0].classList.remove("hidde");  
     })
 
 //Nexts
@@ -79,5 +87,12 @@ const arrowBut = document.getElementsByClassName("arrowBut")
         intro3[0].classList.add("hidde");
         wlcPage[0].classList.remove("hidde");
         wlcPage[0].classList.add("active");
+    })
+//loginBut
+    loginBut[0].addEventListener("click" , function(){
+        wlcPage[0].classList.remove("active");
+        wlcPage[0].classList.add("hidde");
+        loginPage[0].classList.add("active");
+        loginPage[0].classList.remove("hidde");
     })
 console.log(arrowBut)

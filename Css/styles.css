@@ -35,13 +35,13 @@ body{
     opacity: 44%;
     border: solid black;
 }
-.noneBut:hover,
-.mainBut:hover,
-.start:hover,
-.loginBut:hover,
-.createBut:hover{
-    opacity: 100%;
+.arrowBut{
+    margin: 5px;
+    padding: 10px;
+    background:none;
     color: #FFFFFF;
+    opacity: 44%;
+    border: solid black;
 }
 .loginBut{
     width: 90%;
@@ -51,6 +51,43 @@ body{
     border: solid var(--primary2-color);
     border-radius: 10px;
 }
+.loginGoogleBut,
+.loginAppleBut{
+    width: 90%;
+    height:50px;
+    margin: 10px;
+    background:none;
+    color: #777;
+    border: solid var(--primary2-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.registerBut{
+    background:none;
+    color: #FFFFFF;
+    opacity: 44%;
+    border: solid black;
+}
+.noneBut:hover,
+.mainBut:hover,
+.start:hover,
+.loginBut:hover,
+.createBut:hover,
+.arrowBut:hover,
+.loginGoogleBut:hover,
+.loginAppleBut:hover,
+.registerBut:hover{
+    opacity: 100%;
+    color: #FFFFFF;
+}
+
+
+
+
 
 /*Intro0*/
 .intro0{
@@ -162,14 +199,6 @@ body{
 .wlcPage.hidde{
     display: none;
 }
-.arrowBut{
-    margin: 5px;
-    padding: 10px;
-    background:none;
-    color: #FFFFFF;
-    opacity: 44%;
-    border: solid black;
-}
 .wlcPage_Content{
     display: flex;
     flex-direction: column;
@@ -182,6 +211,51 @@ body{
     align-items: center;
     text-align: center;
 }
-
-
-
+/*loginPage*/
+.loginPage{
+    display: none;
+}
+.loginPage.active{
+    min-height: 100vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.loginPage.hidde{
+    display: none;
+}
+form{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+form>input{
+    background-color: black;
+    height: 50px;
+    border: solid 1px #FFFFFF;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+}
+.loginPage_footer{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+} 
+.or{
+    width: 100%;
+}
+.f2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
