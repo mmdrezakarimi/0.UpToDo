@@ -106,17 +106,19 @@
         </header>
         <form action="Login" method="get">
             <h1>Login</h1>
+            <div style="height: 53px;"></div>
             <label for="txt">Username</label>
             <input type="text" id="txt" name="username" placeholder="Enter your Username">
             <label for="pwd">Password</label>
             <input type="password" id="pwd" name="pwd" placeholder="Enter your Password">
-            <button class="loginBut">
+            <div style="height: 80px;"></div>
+            <button class="loginButLogPage" disabled>
                 Login
             </button>
 
         </form>
         <footer class="loginPage_footer">
-            <div class="f1">
+            <div class="lf1">
                 <img src="Assets/Images/Dividerlogin.png" alt="" class="or">
             <button class="loginGoogleBut">
                 <img src="Assets/Icons/google.png" alt="">
@@ -126,10 +128,49 @@
                 Login with Apple
             </button>
             </div>
-            <div class="f2">
+            <div class="lf2">
                 <h6>Don't have an account?</h6>
                 <button class="registerBut">
                     Register
+                </button>
+            </div>
+
+        </footer>
+    </section>
+    <section class="registerPage">
+        <header class="registerPage_header">
+            <button class="arrowBut">
+                <img src="Assets/Icons/arrow-left.png" alt="">
+            </button>
+        </header>
+        <form action="register" method="get">
+            <h1>Register</h1>
+            <label for="txt">Username</label>
+            <input type="text" id="txt" name="username" placeholder="Enter your Username">
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" placeholder="Enter your Password">
+            <label for="cfpwd">Confirm Password</label>
+            <input type="password" id="cfpwd" name="cfpwd" placeholder="Enter your Password again">
+            <button class="loginBut" disabled>
+                Register
+            </button>
+
+        </form>
+        <footer class="registerPage_footer">
+            <div class="rf1">
+                <img src="Assets/Images/Dividerlogin.png" alt="" class="or">
+            <button class="loginGoogleBut">
+                <img src="Assets/Icons/google.png" alt="">
+                Register with Google
+            </button><button class="loginAppleBut">
+                <img src="Assets/Icons/apple.png" alt="">
+                Register with Apple
+            </button>
+            </div>
+            <div class="rf2">
+                <h6>Already have an account?</h6>
+                <button class="loginButRegisterPage">
+                    Login
                 </button>
             </div>
 

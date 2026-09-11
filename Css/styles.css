@@ -46,16 +46,22 @@ body{
 .loginBut{
     width: 100%;
     height:40px;
-    margin: 10px;
+    background-color: var(--primary1-color);
+    border: solid var(--primary2-color);
+    border-radius: 10px;
+}
+.loginButLogPage{
+    width: 327px;
+    height: 48px;
+    top:10px;
     background-color: var(--primary1-color);
     border: solid var(--primary2-color);
     border-radius: 10px;
 }
 .loginGoogleBut,
 .loginAppleBut{
-    width: 100%;
-    height:50px;
-    margin: 10px;
+    width: 327px;
+    height:48px;
     background:none;
     color: #777;
     border: solid var(--primary2-color);
@@ -72,23 +78,19 @@ body{
     opacity: 44%;
     border: solid black;
 }
-.noneBut:hover,
-.mainBut:hover,
-.start:hover,
-.loginBut:hover,
-.createBut:hover,
-.arrowBut:hover,
-.loginGoogleBut:hover,
-.loginAppleBut:hover,
-.registerBut:hover{
+.loginButRegisterPage{
+    background:none;
+    color: #FFFFFF;
+    opacity: 44%;
+    border: solid black; 
+}
+.noneBut:hover,.mainBut:hover,.start:hover,.loginBut:hover,
+.createBut:hover,.arrowBut:hover,
+.loginGoogleBut:hover,.loginAppleBut:hover,.registerBut:hover
+{
     opacity: 100%;
     color: #FFFFFF;
 }
-
-
-
-
-
 /*Intro0*/
 .intro0{
     display: flex;
@@ -192,6 +194,7 @@ body{
 }
 .wlcPage.active{
     min-height: 100vh;
+    margin: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -217,7 +220,6 @@ body{
 }
 .loginPage.active{
     min-height: 100vh;
-    margin: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -225,14 +227,17 @@ body{
     display: none;
 }
 form{
-    margin: 10px;
+    width: 327px;
+    height: 393px;
+    margin: 25px;
     display: flex;
     flex-direction: column;
+    align-self: center;
     gap:15px;
 }
 form>input{
     background-color: rgb(30, 29, 29);
-    height: 40px;
+    height: 48px;
     border: solid 1px #a8a2a2;
     border-radius: 4px;
     padding: 10px;
@@ -240,23 +245,54 @@ form>input{
 }
 .loginPage_footer{
     margin: 18px;
+    height: 177px;
+    top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    gap: 10px;
+    gap: 80px;
 } 
 .or{
     width: 100%;
 }
-.f1{
-
+.lf1,
+.rf1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
 }
-.f2{
+.lf2,
+.rf2{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
 }
+/*RegisterPage*/
+.registerPage{
+    display: none;
+}
+.registerPage.active{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.registerPage.hidde{
+    display: none;
+}
+.registerPage_footer{
+    margin: 18px;
+    height: 177px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 80px;
+} 
