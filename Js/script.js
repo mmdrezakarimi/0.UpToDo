@@ -1,31 +1,83 @@
-//Loading Intro 1 to 2
+//Pages
+const intro0 = document.getElementsByClassName("intro0")
 const intro1 = document.getElementsByClassName("intro1")
 const intro2 = document.getElementsByClassName("intro2")
 const intro3 = document.getElementsByClassName("intro3")
-const myTimeout = setTimeout(Loading1 , 3000);
-
-function Loading1(){
-    intro1[0].classList.toggle("hidde");
-    intro2[0].classList.toggle("active");
-}
-console.time()
-//Intro Button
-//Backs
+const wlcPage = document.getElementsByClassName("wlcPage")
+//IntroButtons
+const start = document.getElementsByClassName("start")
 const back = document.getElementsByClassName("noneBut")
+const next = document.getElementsByClassName("mainBut")
+const arrowBut = document.getElementsByClassName("arrowBut")
+//skip
+    back[0].addEventListener("click" , function(){
+        intro1[0].classList.remove("active");
+        intro1[0].classList.add("hidde");
+        wlcPage[0].classList.remove("hidde");
+        wlcPage[0].classList.add("active");
+    })
+    back[2].addEventListener("click" , function(){
+        intro2[0].classList.remove("active");
+        intro2[0].classList.add("hidde");
+        wlcPage[0].classList.remove("hidde");
+        wlcPage[0].classList.add("active");
+    })
+    back[4].addEventListener("click" , function(){
+        intro3[0].classList.remove("active");
+        intro3[0].classList.add("hidde");
+        wlcPage[0].classList.remove("hidde");
+        wlcPage[0].classList.add("active");
+    })
+//Backs
     back[1].addEventListener("click" , function(){
-        intro1[0].classList.toggle("active");
-        intro2[0].classList.toggle("hidde");
+        intro0[0].classList.add("active");
+        intro0[0].classList.remove("hidde");
+        intro1[0].classList.remove("active");
+        intro1[0].classList.add("hidde");
     })
     back[3].addEventListener("click" , function(){
-    intro2[0].classList.toggle("active");
-    intro3[0].classList.toggle("hidde");
+    intro1[0].classList.remove("hidde");
+    intro1[0].classList.add("active");
+    intro2[0].classList.remove("active");
+    intro2[0].classList.add("hidde");
+    })
+    back[5].addEventListener("click" , function(){
+    intro2[0].classList.remove("hidde");
+    intro2[0].classList.add("active");
+    intro3[0].classList.remove("active");
+    intro3[0].classList.add("hidde");
+    })
+    //arrow-But
+    arrowBut[0].addEventListener("click" , function(){
+    wlcPage[0].classList.remove("active");  
+    wlcPage[0].classList.add("hidde");  
+    intro3[0].classList.remove("hidde");
+    intro3[0].classList.add("active");
     })
 
 //Nexts
-const next = document.getElementsByClassName("mainBut")
-
-    next[0].addEventListener("click" , function(){
-        intro2[0].classList.toggle("hidde");
-        intro3[0].classList.toggle("active");
+    start[0].addEventListener("click" , function(){
+    intro0[0].classList.remove("active")
+    intro0[0].classList.add("hidde")
+    intro1[0].classList.remove("hidde")
+    intro1[0].classList.add("active")
     })
-console.log(back)
+    next[0].addEventListener("click" , function(){
+        intro1[0].classList.remove("active");
+        intro1[0].classList.add("hidde");
+        intro2[0].classList.remove("hidde");
+        intro2[0].classList.add("active");
+    })
+    next[1].addEventListener("click" , function(){
+        intro2[0].classList.remove("active");
+        intro2[0].classList.add("hidde");
+        intro3[0].classList.remove("hidde");
+        intro3[0].classList.add("active");
+    })
+    next[2].addEventListener("click" , function(){
+        intro3[0].classList.remove("active");
+        intro3[0].classList.add("hidde");
+        wlcPage[0].classList.remove("hidde");
+        wlcPage[0].classList.add("active");
+    })
+console.log(arrowBut)
