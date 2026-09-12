@@ -296,3 +296,13 @@ form>input{
     justify-items: center;
     gap: 80px;
 } 
+/*homeScreen*/
+.homeScreen{
+    display: none;
+}
+.homeScreen.active{
+    display: flex;
+}
+.homeScreen.hidde{
+    display: none;
+}

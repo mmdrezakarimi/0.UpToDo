@@ -6,6 +6,7 @@ const intro3 = document.getElementsByClassName("intro3");
 const wlcPage = document.getElementsByClassName("wlcPage");
 const loginPage = document.getElementsByClassName("loginPage");
 const registerPage = document.getElementsByClassName("registerPage")
+const homeScreen = document.getElementsByClassName("homeScreen")
 //Buttons
 const start = document.getElementsByClassName("start");
 const back = document.getElementsByClassName("noneBut");
@@ -130,6 +131,13 @@ const password = document.querySelector("#pwd")
     }  
     userName.addEventListener("input" , checkInputs);
     password.addEventListener("input" , checkInputs);
+    loginBut[1].addEventListener("click" , function(){
+        loginPage[0].classList.remove("active");
+        loginPage[0].classList.add("hidde");
+        homeScreen[0].classList.add("active");
+        homeScreen[0].classList.remove("hidde");
+    })
+  
     //
     loginButRegisterPage[0].addEventListener("click" , function(){
         registerPage[0].classList.add("hidde")

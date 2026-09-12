@@ -1,0 +1,92 @@
+todo-app/
+│
+├── public/
+│   ├── favicon.ico
+│   └── images/
+│       └── logo.svg
+│
+├── src/
+│   │
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── logo.svg
+│   │   │   └── avatar.png
+│   │   │
+│   │   └── icons/
+│   │       └── ...
+│   │
+│   ├── components/
+│   │   │
+│   │   ├── common/
+│   │   │   ├── Button.jsx
+│   │   │   ├── Input.jsx
+│   │   │   ├── Modal.jsx
+│   │   │   ├── Loader.jsx
+│   │   │   ├── EmptyState.jsx
+│   │   │   └── ErrorMessage.jsx
+│   │   │
+│   │   ├── layout/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Sidebar.jsx
+│   │   │   ├── Header.jsx
+│   │   │   └── MainLayout.jsx
+│   │   │
+│   │   └── todo/
+│   │       ├── TodoForm.jsx
+│   │       ├── TodoItem.jsx
+│   │       ├── TodoList.jsx
+│   │       ├── TodoFilter.jsx
+│   │       └── TodoStats.jsx
+│   │
+│   ├── pages/
+│   │   │
+│   │   ├── auth/
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   └── ForgotPassword.jsx
+│   │   │
+│   │   ├── Dashboard.jsx
+│   │   ├── Todos.jsx
+│   │   ├── Profile.jsx
+│   │   ├── Settings.jsx
+│   │   └── NotFound.jsx
+│   │
+│   ├── layouts/
+│   │   ├── AuthLayout.jsx
+│   │   └── DashboardLayout.jsx
+│   │
+│   ├── hooks/
+│   │   ├── useAuth.js
+│   │   ├── useTodos.js
+│   │   └── useLocalStorage.js
+│   │
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── authService.js
+│   │   └── todoService.js
+│   │
+│   ├── context/
+│   │   └── AuthContext.jsx
+│   │
+│   ├── utils/
+│   │   ├── validation.js
+│   │   ├── formatDate.js
+│   │   └── constants.js
+│   │
+│   ├── routes/
+│   │   ├── AppRoutes.jsx
+│   │   ├── ProtectedRoute.jsx
+│   │   └── PublicRoute.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .env
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
