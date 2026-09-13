@@ -104,7 +104,7 @@
                 <img src="Assets/Icons/arrow-left.png" alt="">
             </button>
         </header>
-        <form action="Login" method="">
+        <form action="Login" onsubmit="return showHomeScreen(event)" method="">
             <h1>Login</h1>
             <div style="height: 53px;"></div>
             <label for="txt">Username</label>
@@ -112,7 +112,7 @@
             <label for="pwd">Password</label>
             <input type="password" id="pwd" name="pwd" placeholder="Enter your Password">
             <div style="height: 80px;"></div>
-            <button class="loginBut" disabled>
+            <button type="submit" class="loginBut" disabled>
                 Login
             </button>
 
@@ -177,17 +177,17 @@
         </footer>
     </section>
     <section class="homeScreen">
-        <header>
+        <header class="homeScreen_header">
             <h1>filter</h1>
-            <h1>Index</h1>
+            <h3>Index</h3>
             <h1>ProfileImage</h1>
         </header>
-        <main>
+        <main class="homeScreen_main">
             <img src="Assets/Images/HomeScreenEmpty.png" alt="">
             <h1>What do you want to do today?</h1>
             <h6>Tap + to add your tasks</h6>
         </main>
-        <footer>
+        <footer class="homeScreen_footer">
             <nav>
                 <a href="">Index</a>
                 <a href="">Calendar</a>

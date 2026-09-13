@@ -19,13 +19,7 @@ const loginButRegisterPage = document.getElementsByClassName("loginButRegisterPa
 //LoginInputs
 const userName = document.querySelector("#txt")
 const password = document.querySelector("#pwd")
-    // function checkInputs(){
-    //     if(userName.value !== "" && password.value !== "" && password.value.length >= 8 ){
-    //         loginBut[1].disabled = false;
-    //     } else{
-    //          loginBut[1].disabled = true;
-    //     }          
-    // } 
+    
 
 //registerButs
 
@@ -122,6 +116,13 @@ const password = document.querySelector("#pwd")
         loginPage[0].classList.remove("hidde");
     })
     //loginButLoginPage
+    // function checkInputs(){
+    //     if(userName.value !== "" && password.value !== "" && password.value.length >= 8 ){
+    //         loginBut[1].disabled = false;
+    //     } else{
+    //          loginBut[1].disabled = true;
+    //     }          
+    // } 
         function checkInputs(){
         if(userName.value == "Mmd" && password.value == "2719Mmd@" && password.value.length >= 8 ){
             loginBut[1].disabled = false;
@@ -129,14 +130,17 @@ const password = document.querySelector("#pwd")
              loginBut[1].disabled = true;
         }          
     }  
-    userName.addEventListener("input" , checkInputs);
-    password.addEventListener("input" , checkInputs);
-    loginBut[1].addEventListener("click" , function(){
-        loginPage[0].classList.remove("active");
-        loginPage[0].classList.add("hidde");
-        homeScreen[0].classList.add("active");
-        homeScreen[0].classList.remove("hidde");
-    })
+            userName.addEventListener("input" , checkInputs);
+            password.addEventListener("input" , checkInputs);
+        function showHomeScreen(e){
+            e.preventDefault();
+            loginPage[0].classList.add("hidde");
+            loginPage[0].classList.remove("active");
+            homeScreen[0].classList.add("active");
+            homeScreen[0].classList.remove("hidde");
+            
+            return false;
+        }
   
     //
     loginButRegisterPage[0].addEventListener("click" , function(){
