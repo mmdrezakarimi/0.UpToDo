@@ -1,0 +1,443 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*Colors*/
+:root {
+  --primary1-color: #8875ff;
+  --primary2-color: #6b57f1;
+}
+/*Body*/
+body{
+    background-color: black;
+    color: white;
+}
+/*button*/
+.mainBut{
+    width: 80px;
+    height:50px;
+    margin: 10px;
+    background-color: var(--primary1-color);
+    border: solid var(--primary2-color);
+    border-radius: 10px;
+}
+.noneBut,
+.start,
+.createBut{
+    margin: 10px;
+    padding: 20px;
+    background:none;
+    color: #FFFFFF;
+    opacity: 44%;
+    border: solid black;
+}
+.arrowBut{
+    margin: 5px;
+    padding: 10px;
+    background:none;
+    color: #FFFFFF;
+    opacity: 44%;
+    border: solid black;
+}
+.loginBut{
+    width: 100%;
+    height:40px;
+    background-color: var(--primary1-color);
+    border: solid var(--primary2-color);
+    border-radius: 10px;
+}
+.loginButLogPage{
+    width: 327px;
+    height: 48px;
+    top:10px;
+    background-color: var(--primary1-color);
+    border: solid var(--primary2-color);
+    border-radius: 10px;
+}
+.loginGoogleBut,
+.loginAppleBut{
+    width: 327px;
+    height:48px;
+    background:none;
+    color: #777;
+    border: solid var(--primary2-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.registerBut{
+    background:none;
+    color: #FFFFFF;
+    opacity: 44%;
+    border: solid black;
+}
+.loginButRegisterPage{
+    background:none;
+    color: #FFFFFF;
+    opacity: 44%;
+    border: solid black; 
+}
+.noneBut:hover,.mainBut:hover,.start:hover,.loginBut:hover,
+.createBut:hover,.arrowBut:hover,
+.loginGoogleBut:hover,.loginAppleBut:hover,.registerBut:hover
+{
+    opacity: 100%;
+    color: #FFFFFF;
+}
+.navBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    background:none;
+    color: #fff;
+    opacity: 75%;
+    border: solid black;
+}
+.userProfilBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background:none;
+    color: #FFFFFF;
+    opacity: 44%;
+    border: solid black;
+}
+.logOut{
+    color: red;
+}
+/*Intro0*/
+.intro0{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 50%;
+}
+.intro0.hidde{
+    display: none;
+}
+.intro0.active{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 50%;
+}
+/*Intro1*/
+.intro1{
+    display: none;
+}
+.intro1.active{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.intro1.hidde{
+    display: none;
+}
+.intro1header{
+    display: flex;
+    flex-direction: row;
+}
+.intro1main{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+.intro1footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*Intro2*/
+.intro2{
+    display: none;
+}
+.intro2.active{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.intro2.hidde{
+    display: none;
+}
+.intro2main{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+.intro2footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*Intro3*/
+.intro3{
+    display: none;
+}
+.intro3.active{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.intro3.hidde{
+    display: none;
+}
+.intro3main{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.intro3footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*wlcPage*/
+.wlcPage{
+    display: none;
+}
+.wlcPage.active{
+    min-height: 100vh;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wlcPage.hidde{
+    display: none;
+}
+.wlcPage_Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.wlcPage_Footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/*loginPage*/
+.loginPage{
+    display: none;
+}
+.loginPage.active{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.loginPage.hidde{
+    display: none;
+}
+form{
+    width: 327px;
+    height: 393px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap:15px;
+}
+form>input{
+    background-color: rgb(30, 29, 29);
+    height: 48px;
+    border: solid 1px #a8a2a2;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+}
+.loginPage_footer{
+    margin: 18px;
+    height: 177px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 80px;
+} 
+.or{
+    width: 100%;
+}
+.lf1,
+.rf1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.lf2,
+.rf2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+/*RegisterPage*/
+.registerPage{
+    display: none;
+}
+.registerPage.active{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.registerPage.hidde{
+    display: none;
+}
+.registerPage_footer{
+    margin: 18px;
+    height: 177px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 80px;
+} 
+/*homeScreen*/
+.homeScreen{
+    display: none;
+}
+.homeScreen.active{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: hidden;
+    transition: filter 0.3s ease;
+}
+.homeScreen.hidde{
+    display: none;
+}
+.homeScreen.blur{
+    filter: blur(8px);
+}
+.homeScreen_header{
+    width: 100dvw;
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.homeScreen_header>button{
+    background:none;
+    color: #FFFFFF;
+    opacity: 44%;
+    border: solid black;
+}
+.homeScreen_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+    overflow: hidden;
+}
+.homeScreen_footer{
+    width: 375px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.homeScreen_footer>nav{
+    width: 155px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.homeScreen_footer>nav>button>img{
+    width: 24px;
+    height: 24px;
+}
+.plus{
+    background:none;
+    color: #FFFFFF;
+    opacity: 85%;
+    border: solid black;
+    margin-bottom:80px;
+}
+ /*addTaskModal*/
+.addTaskOverlay{
+    display: none;  
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    border: solid var(--primary2-color);
+    border-radius: 20px;
+    background-color: var(--primary1-color);
+    transition: opacity 0.3s ease;
+    z-index: 999;
+    margin: 50px;
+}
+.addTaskOverlay.active{
+    display: flex;
+    opacity: 1;
+    visibility: visible;    
+}
+.addTask{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 12px;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    margin: 20px;
+    padding: 10px;
+}
+.addTaskOverlay.active .addTask{
+    transform: scale(1);
+}
+/*UserProfile*/
+.userProfile{
+    display: none;
+}
+.userProfile.active{
+    display: flex;
+    flex-direction: column;
+}
+.userProfile.hidde{
+    display: none;
+}

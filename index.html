@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpToDo</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+</head>
+<body>
+    <section class="intro0">
+        <img src="Assets/Images/0.Intro0.png" alt="">
+        <button class="start">
+            START
+        </button>
+    </section>
+    <section class="intro1">
+        <header class="intro1header">
+            <button class="noneBut">SKIP</button>
+        </header>
+        <main class="intro1main">
+            <img src="Assets/Images/1.Intro1.png" alt="">
+            <br>
+            <img src="Assets/Images/1.NavIn1.png" alt="">
+            <br>
+            <h1>Manage Your tasks</h1>
+            <br>
+            <p>You Can easily manage all of your daily tasks
+                <br>
+                in DoMe for free</p>
+        </main>
+        <footer class="intro1footer">
+            <button class="noneBut">BACK</button>
+            <button class="mainBut">NEXT</button>
+        </footer>
+    </section>
+    <section class="intro2">
+        <header class="intro2header">
+            <button class="noneBut">SKIP</button>
+        </header>
+        <main class="intro2main">
+            <img src="Assets/Images/2.Intro2.png" alt="">
+            <br>
+            <img src="Assets/Images/2.NavIn2.png" alt="">
+            <br>
+            <h1>Create daily routine</h1>
+            <br>
+            <p>In Uptodo you can create your
+                <br>
+               personalized routine to stay productive    
+            </p>
+        </main>
+        <footer class="intro2footer">
+            <button class="noneBut">BACK</button>
+            <button class="mainBut">NEXT</button>
+        </footer>
+    </section>
+    <section class="intro3">
+        <header class="intro3header">
+            <button class="noneBut">SKIP</button>
+        </header>
+        <main class="intro3main">
+            <img src="Assets/Images/3.Intro3.png" alt="">
+            <br>
+            <img src="Assets/Images/3.NavIn3.png" alt="">
+            <br>
+            <h1>Create daily routine</h1>
+            <br>
+            <p>In Uptodo you can create your
+                <br>
+               personalized routine to stay productive    
+            </p>
+        </main>
+        <footer class="intro3footer">
+            <button class="noneBut">BACK</button>
+            <button class="mainBut">NEXT</button>
+        </footer>
+    </section>
+    <section class="wlcPage">
+        <header class="wlcPage_header">
+            <button class="arrowBut">
+                <img src="Assets/Icons/arrow-left.png" alt="">
+            </button>
+        </header>
+        <main class="wlcPage_Content">
+            <h1>Welcome to UpTodo</h1>
+            <p>Please login to your account or create
+             <br>
+             new account to continue
+            </p>
+        </main>
+        <footer class="wlcPage_Footer">
+            <button class="loginBut">
+                LOGIN
+            </button>
+            <button class="createBut">
+                CREATE ACCOUNT
+            </button>
+        </footer>
+    </section>
+    <section class="loginPage">
+        <header class="loginPage_header">
+            <button class="arrowBut">
+                <img src="Assets/Icons/arrow-left.png" alt="">
+            </button>
+        </header>
+        <form action="Login" onsubmit="return showHomeScreen(event)" method="">
+            <h1>Login</h1>
+            <div style="height: 53px;"></div>
+            <label for="txt">Username</label>
+            <input type="text" id="txt" name="username" placeholder="Enter your Username">
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" placeholder="Enter your Password">
+            <div style="height: 80px;"></div>
+            <button type="submit" class="loginBut" disabled>
+                Login
+            </button>
+
+        </form>
+        <footer class="loginPage_footer">
+            <div class="lf1">
+                <img src="Assets/Images/Dividerlogin.png" alt="" class="or">
+            <button class="loginGoogleBut">
+                <img src="Assets/Icons/google.png" alt="">
+                Login with Google
+            </button><button class="loginAppleBut">
+                <img src="Assets/Icons/apple.png" alt="">
+                Login with Apple
+            </button>
+            </div>
+            <div class="lf2">
+                <h6>Don't have an account?</h6>
+                <button class="registerBut">
+                    Register
+                </button>
+            </div>
+
+        </footer>
+    </section>
+    <section class="registerPage">
+        <header class="registerPage_header">
+            <button class="arrowBut">
+                <img src="Assets/Icons/arrow-left.png" alt="">
+            </button>
+        </header>
+        <form action="register" method="get">
+            <h1>Register</h1>
+            <label for="txt">Username</label>
+            <input type="text" id="txt" name="username" placeholder="Enter your Username">
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" placeholder="Enter your Password">
+            <label for="cfpwd">Confirm Password</label>
+            <input type="password" id="cfpwd" name="cfpwd" placeholder="Enter your Password again">
+            <button class="loginBut" disabled>
+                Register
+            </button>
+
+        </form>
+        <footer class="registerPage_footer">
+            <div class="rf1">
+                <img src="Assets/Images/Dividerlogin.png" alt="" class="or">
+            <button class="loginGoogleBut">
+                <img src="Assets/Icons/google.png" alt="">
+                Register with Google
+            </button><button class="loginAppleBut">
+                <img src="Assets/Icons/apple.png" alt="">
+                Register with Apple
+            </button>
+            </div>
+            <div class="rf2">
+                <h6>Already have an account?</h6>
+                <button class="loginButRegisterPage">
+                    Login
+                </button>
+            </div>
+
+        </footer>
+    </section>
+    <section class="homeScreen">
+        <header class="homeScreen_header">
+            <button>
+                <img src="Assets/Icons/sort.png" alt="">
+            </button>
+            <h3>Index</h3>
+            <button>
+                <img src="Assets/Icons/Ellipse 13.png" alt="">
+            </button>
+        </header>
+        <main class="homeScreen_main">
+            <img src="Assets/Images/HomeScreenEmpty.png" alt="">
+            <h1>What do you want to do today?</h1>
+            <h6>Tap + to add your tasks</h6>
+        </main>
+        <footer class="homeScreen_footer">
+            <nav>
+                <button class="navBtn" data-target="index">
+                    <img src="Assets/Icons/home-2.png" alt="">
+                    Index
+                </button>
+                <button class="navBtn" data-target="calendar">
+                    <img src="Assets/Icons/calendar.png" alt="">
+                    Calendar
+                </button>
+            </nav>            
+                <button class="plus">
+                    <img src="Assets/Icons/Group 162.png" alt="">
+                </button>
+            <nav>
+                <button class="navBtn" data-target="focuse">
+                    <img src="Assets/Icons/clock.png" alt="">
+                    Focuse
+                </button>
+                <button class="navBtn" data-target="userProfile">
+                    <img src="Assets/Icons/user.png" alt="">
+                    Profile
+                </button>
+            </nav>
+        </footer>
+    </section>
+    <section class="addTaskOverlay">
+        <div class="addTask">
+            <button class="close">
+                <img src="Assets/Icons/close.png" alt="">
+            </button>
+            <h2>Add Task</h2>
+            <form action="">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="Title" placeholder="Write the title">
+                <label for="desc">Description</label>
+                <input type="text" id="txt" name="desc" placeholder="What do you want to do">
+            </form>
+            <button>
+             OK
+            </button>
+        </div>
+    </section>
+    <section class="userProfile">
+        <header class="userProfile">
+            <h1>Pofile</h1>
+            <img src="Assets/Icons/user.png" alt="">
+            <h1>User Acount Name</h1>
+        </header>
+        <main class="acountInfo">
+            <button class="userProfilBtns">
+                <img src="Assets/Icons/user.png" alt="">
+                Change account name
+                <img src="Assets/Icons/arrow-right.png" alt="">
+            </button>
+            <button class="userProfilBtns">
+                <img src="Assets/Icons/key.png" alt="">
+                Change account password
+                <img src="Assets/Icons/arrow-right.png" alt="">
+            </button>
+            <button class="userProfilBtns">
+                <img src="Assets/Icons/camera.png" alt="">
+                Change account Image
+                <img src="Assets/Icons/arrow-right.png" alt="">
+            </button>
+        </main>
+        <footer class="contact">
+            <button class="userProfilBtns">
+                <img src="Assets/Icons/menu.png" alt="">
+                About Us
+                <img src="Assets/Icons/arrow-right.png" alt="">
+            </button>
+            <button class="userProfilBtns">
+                <img src="Assets/Icons/info-circle.png" alt="">
+                FAQ
+                <img src="Assets/Icons/arrow-right.png" alt="">
+            </button>
+            <button class="userProfilBtns">
+                <img src="Assets/Icons/flash.png" alt="">
+                Help & Feedback
+                <img src="Assets/Icons/arrow-right.png" alt="">
+            </button>
+            <button class="userProfilBtns">
+                <img src="Assets/Icons/like.png" alt="">
+                Support Us
+                <img src="Assets/Icons/arrow-right.png" alt="">
+            </button>
+        </footer>
+        <button class="userProfilBtns logOut">
+            <img src="Assets/Icons/logout.png" alt="">
+            Log Out
+        </button>
+    </section>
+    <script src="Js/data.js"></script>
+    <script src="Js/script.js"></script>
+</body>
+</html>
